@@ -1,4 +1,4 @@
-node('local') {
+node('master') {
  	// Clean workspace before doing anything
     deleteDir()
 
@@ -10,7 +10,7 @@ node('local') {
         }
         stage ('Unit test'){
         sh """
-           cd /home/narayan/projects/scala-gradle-cucumber
+           cd scala-cucumber-gradle
            ./gradlew test
            """
         }
