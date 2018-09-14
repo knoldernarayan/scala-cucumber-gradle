@@ -8,7 +8,7 @@ node {
     }
 
     stage ('Unit test'){
-       sh 'clean test'
+       sh './gradlew clean test'
     }
     stage ("User Acceptance test"){
          sh 'echo cucumber'
