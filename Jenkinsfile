@@ -10,7 +10,6 @@ node('master') {
         }
         stage ('Unit test'){
         sh """
-           cd scala-cucumber-gradle
            ./gradlew test
            """
         }
