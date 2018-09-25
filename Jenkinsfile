@@ -11,7 +11,8 @@ node {
        sh './gradlew clean test'
     }
     stage ("User Acceptance test"){
-         sh 'echo cucumber'
+         sh 'Running cucumber test'
+         sh './gradlew clean store-runner'
     }
     stage ('Deploy') {
             sh "echo 'shell scripts to deploy to server...'"
